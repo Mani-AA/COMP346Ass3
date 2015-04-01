@@ -3,6 +3,9 @@
  * The main starter.
  *
  * @author Serguei A. Mokhov, mokhov@cs.concordia.ca
+ * 
+ * Submission by: Michael Bilinsky 26992358
+ * COMP 346 Assignment 3
  */
 public class DiningPhilosophers
 {
@@ -41,14 +44,10 @@ public class DiningPhilosophers
 	{
 		try
 		{
-			/*
-			 * TODO:
-			 * Should be settable from the command line
-			 * or the default if no arguments supplied.
-			 */
 			
 			int iPhilosophers = DEFAULT_NUMBER_OF_PHILOSOPHERS;;
 			
+			//If argument specified, attempt to set philosopher number
 			if(argv.length > 0)
 			{
 				try

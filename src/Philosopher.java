@@ -5,6 +5,9 @@ import common.BaseThread;
  * Outlines main subrutines of our virtual philosopher.
  *
  * @author Serguei A. Mokhov, mokhov@cs.concordia.ca
+ * 
+ * Submission by: Michael Bilinsky 26992358
+ * COMP 346 Assignment 3
  */
 public class Philosopher extends BaseThread
 {
@@ -107,12 +110,7 @@ public class Philosopher extends BaseThread
 
 			think();
 
-			/*
-			 * TODO:
-			 * A decision is made at random whether this particular
-			 * philosopher is about to say something terribly useful.
-			 */
-			
+			//20% chance to want to say something
 			if((int)(Math.random() * 5.0) == 1)
 			{
 				DiningPhilosophers.soMonitor.requestTalk();
