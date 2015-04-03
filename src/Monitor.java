@@ -119,11 +119,13 @@ public class Monitor
 				//for the other chopstick to become available.
 				if(!chopsticks[pid].pickedUp && !chopsticks[pid].lastPickedUpByMe(piTID))
 				{
+					//chopstick on the left
 					chopsticks[pid].pickUp(piTID);
 				} 
 				else if(!chopsticks[(pid + 1) % noP].pickedUp && !chopsticks[(pid + 1) % noP].lastPickedUpByMe(piTID))
 				{
-					chopsticks[pid].pickUp(piTID);
+					//chopstick on the right
+					chopsticks[(pid + 1) % noP].pickUp(piTID);
 				}
 			} 
 			else
